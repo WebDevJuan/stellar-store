@@ -3,21 +3,13 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Footer from "./components/Footer";
 import NavbarWithCTAButton from "./components/NavBar";
 import Home from "./pages/Home";
+import Store from './pages/Store';
 
 function InitialPage(){
   return (
     <>
-      <NavbarWithCTAButton />
       <Home />
       <Footer />
-    </>
-  )
-}
-
-function Store(){
-  return (
-    <>
-      Tienda
     </>
   )
 }
@@ -36,6 +28,7 @@ function App() {
     <>
       <main className="h-screen bg-indigo-500">
       <BrowserRouter>
+      <NavbarWithCTAButton />
         <Routes>
           <Route path="/" element={<InitialPage />} />
           <Route path="/store" element={<Store />} />

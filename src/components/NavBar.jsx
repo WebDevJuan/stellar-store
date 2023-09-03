@@ -1,5 +1,6 @@
 "use client";
 import { Button, Navbar, DarkThemeToggle, Flowbite } from "flowbite-react";
+import { useNavigate } from "react-router-dom";
 
 export function DarkMode() {
   return (
@@ -10,6 +11,7 @@ export function DarkMode() {
 }
 
 export default function NavbarWithCTAButton() {
+  const navigate = useNavigate();
   return (
     <Navbar fluid rounded style={{position: 'fixed', left: 0, top:0, zIndex: 10, width: '100%'}}>
       <Navbar.Brand href="#">
@@ -22,14 +24,14 @@ export default function NavbarWithCTAButton() {
       </Navbar.Brand>
       <div className="flex md:order-2 gap-2">
         {/* <DarkMode/> */}
-        <Button gradientMonochrome="purple" className="font-mono">Tienda</Button>
+        <Button gradientMonochrome="purple" className="font-mono" onClick={() => navigate("/store")}>Tienda</Button>
         <Navbar.Toggle className="" ></Navbar.Toggle>
        
       </div>
       <Navbar.Collapse className="z-40">
         <Navbar.Link
-          href="#"
-          className="text-slate-300 text-base hover:text-indigo-500 font-mono"
+          onClick={() => navigate("/")}
+          className="text-slate-300 text-base hover:text-indigo-500 font-mono cursor-pointer"
         >
           Inicio
         </Navbar.Link>
