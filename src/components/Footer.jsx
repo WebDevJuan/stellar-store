@@ -11,16 +11,10 @@ export default function FooterPage() {
       />
       <Footer.LinkGroup>
         <Footer.Link href="#">
-          About
+          Política de privacidad
         </Footer.Link>
         <Footer.Link href="#">
-          Privacy Policy
-        </Footer.Link>
-        <Footer.Link href="#">
-          Licensing
-        </Footer.Link>
-        <Footer.Link href="#">
-          Contact
+          Tel.697970907
         </Footer.Link>
       </Footer.LinkGroup>
     </Footer>

@@ -90,7 +90,7 @@ export default function DetailSection(){
             minima maiores. Officiis cumque excepturi possimus dicta numquam
             molestias quidem.
             </p>
-            <button className="text-slate-800 bg-indigo-400 p-3 rounded-md mt-3" onClick={() => navigate('/store')}>Tienda</button>
+            <button className="text-slate-100 bg-indigo-500 p-3 rounded-md mt-3 font-mono text-sm" onClick={() => navigate('/store')}>Tienda</button>
           </div>
         </div>
         </>

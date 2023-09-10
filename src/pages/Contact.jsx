@@ -60,6 +60,7 @@ function DefaultForm({showToast, setShowToast}) {
           name="title"
           required
           type="text"
+          placeholder="Problema con el producto 8982w9..."
           onChange={e => onHandleChange(e)}
         />
       </div>

@@ -1,6 +1,7 @@
 "use client";
 import { Button, Navbar, DarkThemeToggle, Flowbite } from "flowbite-react";
 import { useNavigate } from "react-router-dom";
+// import './styleNavBar';
 
 export function DarkMode() {
   return (
@@ -10,12 +11,10 @@ export function DarkMode() {
   );
 }
 
-
-
 export default function NavbarWithCTAButton() {
   const navigate = useNavigate();
   return (
-    <Navbar fluid style={{position: 'fixed', left: 0, top:0, zIndex: 10, width: '100%'}}>
+    <Navbar fluid className="fixed left-0 top-0 z-10 w-full">
     {/* <Navbar fluid rounded theme={{theme: customTheme}}> */}
       <Navbar.Brand href="#">
         {/* <img
@@ -31,22 +30,22 @@ export default function NavbarWithCTAButton() {
         <Navbar.Toggle className=""></Navbar.Toggle>
        
       </div>
-      <Navbar.Collapse className="z-40">
+      <Navbar.Collapse>
         <Navbar.Link
           onClick={() => navigate("/")}
-          className="text-slate-300 text-base hover:text-indigo-500 font-mono cursor-pointer"
+          className="text-slate-300 text-sm hover:text-indigo-500 font-mono cursor-pointer"
         >
           Inicio
         </Navbar.Link>
         <Navbar.Link
           onClick={() => navigate("/about")}
-          className="text-slate-300 text-base hover:text-indigo-500 font-mono"
+          className="text-slate-300 text-sm hover:text-indigo-500 font-mono cursor-pointer"
         >
           Nosotr@s
         </Navbar.Link>
         <Navbar.Link
           onClick={() => navigate("/contact")}
-          className="text-slate-300 text-base hover:text-indigo-500 font-mono"
+          className="text-slate-300 text-sm hover:text-indigo-500 font-mono cursor-pointer"
         >
           Contacto
         </Navbar.Link>
