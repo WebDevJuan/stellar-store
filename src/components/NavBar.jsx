@@ -25,7 +25,7 @@ export default function NavbarWithCTAButton() {
       <div className="flex md:order-2 gap-2">
         {/* <DarkMode/> */}
         <Button gradientMonochrome="purple" className="font-mono" onClick={() => navigate("/store")}>Tienda</Button>
-        <Navbar.Toggle className="" ></Navbar.Toggle>
+        <Navbar.Toggle className=""></Navbar.Toggle>
        
       </div>
       <Navbar.Collapse className="z-40">

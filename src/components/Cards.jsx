@@ -1,6 +1,7 @@
 import { Card } from "flowbite-react";
 
 
+// eslint-disable-next-line react/prop-types
 export default function Cards({title, description, image}){
     console.log(image);
     return(

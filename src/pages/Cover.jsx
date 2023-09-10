@@ -1,12 +1,12 @@
 export default function Cover(){
     return(
-        <div className="relative top-10 bg-cover overflow-hidden bg-[url('https://cdn.dribbble.com/userupload/3862984/file/original-e3a325ffc58fce469685e7ed9132c1f7.jpg?resize=1200x900')]">
+        <div className="relative top-12 bg-cover overflow-hidden bg-[url('https://cdn.dribbble.com/userupload/5906240/file/original-4285a895427f6e0ccc1e744a085bb175.jpg?resize=1200x900')]">
           <div className="flex md:flex-row flex-col items-center h-3/4 justify-items-center">
-            <div className="flex flex-col basis-2/3 pl-8 backdrop-blur-sm bg-slate-500/50 rounded-3xl m-10 px-2">
+            <div className="flex flex-col basis-2/3 pl-8 backdrop-blur-sm bg-slate-600/50 rounded-3xl m-10 px-2">
               <h2 className="text-left md:text-5xl sm:text-4xl text-slate-200 text-3xl font-semibold mb-5 mt-20">
                 Very spacey clothing
               </h2>
-              <h1 className="text-left md:text-8xl sm:text-7xl font-serif text-purple-400 text-5xl font-bold pb-20">
+              <h1 className="text-left md:text-8xl sm:text-7xl font-serif text-purple-500 text-5xl font-bold pb-20">
                 StellarThreads
               </h1>
               <div className="font-light mt-10 mb-2 text-slate-400">

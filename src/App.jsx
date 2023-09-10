@@ -1,6 +1,6 @@
 // import { Button } from 'flowbite-react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Footer from "./components/Footer";
+import FooterPage from "./components/Footer";
 import NavbarWithCTAButton from "./components/NavBar";
 import Home from "./pages/Home";
 import Store from './pages/Store';
@@ -9,7 +9,6 @@ function InitialPage(){
   return (
     <>
       <Home />
-      <Footer />
     </>
   )
 }
@@ -34,6 +33,7 @@ function App() {
           <Route path="/store" element={<Store />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <FooterPage />
       </BrowserRouter>
       </main>
     </>
