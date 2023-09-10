@@ -27,9 +27,9 @@ export default function Store() {
         <div className="flex gap-3 items-center justify-center">
         <input
           type="text"
-          placeholder="Buscar productos"
+          placeholder="Buscar productos..."
           onChange={event => setSearchTerm(event.target.value)}
-          className="rounded md:w-1/2 w-full mx-2"
+          className="rounded md:w-1/2 w-full mx-2 dark:bg-slate-400 text-slate-800"
         />
         {/* <Button onClick={() => setOpenModal("dismissible")}>Filtros</Button> */}
         </div>
