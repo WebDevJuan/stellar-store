@@ -10,10 +10,13 @@ export function DarkMode() {
   );
 }
 
+
+
 export default function NavbarWithCTAButton() {
   const navigate = useNavigate();
   return (
-    <Navbar fluid rounded style={{position: 'fixed', left: 0, top:0, zIndex: 10, width: '100%'}}>
+    <Navbar fluid style={{position: 'fixed', left: 0, top:0, zIndex: 10, width: '100%'}}>
+    {/* <Navbar fluid rounded theme={{theme: customTheme}}> */}
       <Navbar.Brand href="#">
         {/* <img
           alt="F"
@@ -36,13 +39,13 @@ export default function NavbarWithCTAButton() {
           Inicio
         </Navbar.Link>
         <Navbar.Link
-          href="#"
+          onClick={() => navigate("/about")}
           className="text-slate-300 text-base hover:text-indigo-500 font-mono"
         >
           Nosotr@s
         </Navbar.Link>
         <Navbar.Link
-          href="#"
+          onClick={() => navigate("/contact")}
           className="text-slate-300 text-base hover:text-indigo-500 font-mono"
         >
           Contacto

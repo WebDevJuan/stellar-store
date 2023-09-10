@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom"
 export default function DetailSection(){
+    const navigate = useNavigate();
     return (
         <>
         <div className="relative top-10 h-max text-center font-mono font-bold text-2xl p-5 bg-slate-200 dark:bg-slate-900 text-slate-800 dark:text-white border-b-2 ">
@@ -88,7 +90,7 @@ export default function DetailSection(){
             minima maiores. Officiis cumque excepturi possimus dicta numquam
             molestias quidem.
             </p>
-            <button className="text-slate-800 bg-indigo-400 p-3 rounded-md mt-3">Tienda</button>
+            <button className="text-slate-800 bg-indigo-400 p-3 rounded-md mt-3" onClick={() => navigate('/store')}>Tienda</button>
           </div>
         </div>
         </>
