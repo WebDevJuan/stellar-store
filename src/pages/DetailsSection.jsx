@@ -84,7 +84,7 @@ export default function DetailSection(){
           </svg>
         </div>
         <div className="bg-indigo-500 flex items-center justify-center">
-          <div className="flex flex-col items-center justify-center backdrop-blur-sm bg-slate-900/80 rounded-3xl h-max w-full m-10 p-10 ">
+          <div className=" animate-fade-right flex flex-col items-center justify-center backdrop-blur-sm bg-slate-900/80 rounded-3xl h-max w-full m-10 p-10 ">
             <p className="text-justify font-mono text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
             maiores. Quae porro a saepe quasi dignissimos! Cum nemo magni sequi
             minima maiores. Officiis cumque excepturi possimus dicta numquam
