@@ -102,7 +102,7 @@ export default function Contact() {
   const [showToast, setShowToast] = useState();
 
   return (
-    <div className="relative top-20 w-full">
+    <div className="w-full">
       <div className="flex flex-col justify-center items-center bg-slate-900/80 rounded mx-2 h-1/2 p-5 font-mono">
         <DefaultForm showToast={showToast} setShowToast={setShowToast} />
         

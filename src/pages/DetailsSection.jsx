@@ -3,7 +3,7 @@ export default function DetailSection(){
     const navigate = useNavigate();
     return (
         <>
-        <div className="relative top-10 h-max text-center font-mono font-bold text-2xl p-5 bg-slate-200 dark:bg-slate-900 text-slate-800 dark:text-white border-b-2 ">
+        <div className="h-max text-center font-mono font-bold text-2xl p-5 bg-slate-200 dark:bg-slate-900 text-slate-800 dark:text-white border-b-2 ">
           Sección 1
         </div>
         <div className="flex md:flex-row flex-col bg-slate-200 dark:bg-slate-900 text-slate-800 dark:text-white font-mono">

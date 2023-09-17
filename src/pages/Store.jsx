@@ -19,17 +19,17 @@ export default function Store() {
   }, [searchTerm]);
 
   return (
-    <div className=" bg-gradient-to-r bg-indigo-500">
+    <div className="mt-5 bg-gradient-to-r bg-indigo-500">
       <div
         id="store"
-        className=" bg-gradient-to-r relative top-20"
+        className=" bg-gradient-to-r"
       >
         <div className="flex gap-3 items-center justify-center">
         <input
           type="text"
           placeholder="Buscar productos..."
           onChange={event => setSearchTerm(event.target.value)}
-          className="rounded md:w-1/2 w-full mx-2 dark:bg-slate-400 text-slate-800"
+          className="rounded md:w-1/2 w-full mx-2"
         />
         {/* <Button onClick={() => setOpenModal("dismissible")}>Filtros</Button> */}
         </div>

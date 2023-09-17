@@ -2,7 +2,7 @@ import { Footer }  from 'flowbite-react';
 
 export default function FooterPage() {
   return (
-    <footer className="relative top-20 bg-indigo-500 flex w-full p-5 font-mono text-slate-300">
+    <footer className="bg-indigo-500 flex w-full p-5 font-mono text-slate-300">
       <Footer container className='dark:bg-blue-800'>
       <Footer.Copyright
         by="StellarThreads"

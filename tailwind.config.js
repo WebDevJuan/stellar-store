@@ -8,5 +8,5 @@ export default {
   theme: {
     extend: {}
   },
-  plugins: [require('flowbite/plugin'), require('tailwindcss-animated') ]
+  plugins: [require('flowbite/plugin'), require('tailwindcss-animated'), require('@material-tailwind/react/utils/withMT') ]
 }

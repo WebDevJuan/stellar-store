@@ -4,7 +4,7 @@ import { Progress } from 'flowbite-react';
 export default function About() {
 
   return (
-    <div className="relative top-20 w-full">
+    <div className="mt-5 w-full">
       <div className="flex flex-col justify-center items-center bg-slate-900/80 rounded mx-2 h-1/2 p-5 font-mono">
         <h2 className='text-slate-300 text-xl'>Sobre nosotros</h2>
         <p className='text-slate-300 text-sm'>

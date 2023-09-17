@@ -28,7 +28,6 @@ export default function NavbarWithCTAButton() {
         {/* <DarkMode/> */}
         <Button gradientMonochrome="purple" className="font-mono" onClick={() => navigate("/store")}>Tienda</Button>
         <Navbar.Toggle className=""></Navbar.Toggle>
-       
       </div>
       <Navbar.Collapse>
         <Navbar.Link
