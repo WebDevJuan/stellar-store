@@ -1,16 +1,14 @@
 import React from "react";
 import {
   Navbar,
-//   MobileNav,
   Collapse,
   Typography,
-  // Button,
   IconButton,
 } from "@material-tailwind/react";
-//  import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 export function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
- 
+  
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -26,9 +24,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/" className="flex items-center">
+        <Link to="/" className="flex items-center" onClick={() => setOpenNav(false)}>
           Inicio
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -36,9 +34,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/about" className="flex items-center">
+        <Link to="/about" className="flex items-center" onClick={() => setOpenNav(false)}>
           Nosotr@s
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -46,9 +44,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/contact"  className="flex items-center">
+        <Link to="/contact"  className="flex items-center" onClick={() => setOpenNav(false)}>
           Contacto
-        </a>
+        </Link>
       </Typography>
     </ul>
   );
@@ -58,17 +56,17 @@ export function NavbarDefault() {
     <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4 bg-slate-700 font-mono border-none">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
-          as="a"
-          href="#"
+          as={Link}
+          to="/"
           className="mr-4 cursor-pointer py-1.5 font-medium font-mono"
         >
           StellarStore
         </Typography>
         <div className="flex items-center gap-4">
           <div className="mr-4 hidden lg:block">{navList}</div>
-          <a size="sm" className="bg-indigo-500 rounded p-2 flex w-100" href="/store">
+          <Link size="sm" className="bg-indigo-500 rounded p-2 flex w-100" to="/store" onClick={() => setOpenNav(false)}>
             <span>Tienda</span>
-          </a>
+          </Link>
           <IconButton
             variant="text"
             className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -110,9 +108,9 @@ export function NavbarDefault() {
       </div>
       <Collapse open={openNav}>
         {navList}
-        <a size="sm" className="bg-indigo-500 rounded p-2 flex w-100" href="/store">
+        <Link size="sm" className="bg-indigo-500 rounded p-2 flex w-100" to="/store" onClick={() => setOpenNav(false)}>
           <span>Tienda</span>
-        </a>
+        </Link>
       </Collapse>
     </Navbar>
     // </div>
