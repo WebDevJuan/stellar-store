@@ -94,7 +94,6 @@ function DefaultForm({showToast, setShowToast}) {
       {showToast && <SimpleToast />}
       {openCondition && <DefaultModal openModal={openCondition} setOpenModal={setOpenCondition} /> }
     </form>
-    
   );
 }
 
@@ -103,7 +102,7 @@ export default function Contact() {
 
   return (
     <div className="w-full">
-      <div className="flex flex-col justify-center items-center bg-slate-900/80 rounded mx-2 h-1/2 p-5 font-mono">
+      <div className="mt-5 flex flex-col justify-center items-center bg-slate-900/80 rounded mx-2 h-1/2 p-5 font-mono">
         <DefaultForm showToast={showToast} setShowToast={setShowToast} />
         
       </div>
